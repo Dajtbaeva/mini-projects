@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+.header {
+  height: 54px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between; /*раскидываем логотип и меню по разным краям*/
+  align-items: center; /*размещаем по центру*/
+}
+.header__left,
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left_item {
+  padding: 16px 6px 16px 10px;
+  height: 100%;
+  margin-top: 1px;
+  width: 137px;
+  outline-offset: -2px;
+}
+.header__left_item_logo {
+  overflow-x: visible;
+  margin-top: -3px;
+  max-width: none;
+  width: 108px;
+  display: block;
+  max-width: 100%;
+  height: 23px;
+}
+.header__left_link {
+  display: flex;
+  text-decoration: none;
+  overflow-x: visible;
+  border: 1px solid transparent;
+  color: #262626;
+  position: relative;
+  font-size: 13px !important;
+  margin-top: 1px;
+  padding: 16px 8px 10px;
+  height: 30px;
+  outline-offset: -2px;
+}
+.header__left_link:hover,
+.header__right__products:hover,
+.header__right__search:hover,
+.header__right__login:hover {
+  text-decoration: underline;
+}
+.header__right__products,
+.header__right__search,
+.header__right__login {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-size: 13px !important;
+  color: #262626;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  margin-top: 1px;
+  padding: 10px 9px 10px 5px;
+  height: 100%;
+}
+.header__right__search_text {
+  cursor: pointer;
+}
+.header__right__login_icon {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  background-image: url("./assets/icons/icon.svg");
+}
+.main__page {
+  background-color: #0067b8;
+  width: 100% !important;
+  height: 65vh;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/background.avif");
+}
+/* хотела сделать так, чтобы бэкграунд картинка не двигалась -> недоработано 
+.main__page__back {
+  width: 100% !important;
+  min-height: 65vh;
+  min-width: 640px;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+.main__page__element {
+  margin-left: 5%;
+  position: relative;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 48px;
+  width: 20%;
+}
+.main__page__element__heading {
+  font-size: 2.3125rem;
+  font-size: 37px;
+  margin-bottom: 1.25rem;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000 !important;
+  word-wrap: break-word;
+}
+.main__page__element__description {
+  margin-bottom: 1.5rem !important;
+  width: 470px;
+}
+.main__page__element__group {
+  display: flex;
+  box-sizing: border-box; 
+}
+.main__page__element__group_link {
+  margin-right: 1.5rem;
+  color: #fff !important;
+  font-weight: 600;
+  border: 0.125rem solid transparent;
+  position: relative;
+  border-radius: 0.125rem;
+  background-color: inherit;
+  padding: 0.625rem 0.75rem;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: block;
+  background-color: #0067b8;
+}
+.main__page__element__group_link_1 {
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  padding-top: 2%;
+  color: inherit;
+  font-size: 1rem;
+}
+.main__elements {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.main__elements__item {
+  width: 23%;
+  padding: 13px;
+}
+.main__elements__item-img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+}
+.main__elements__item-heading {
+  font-size: 1.8125rem;
+  margin: 1.5rem 0;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main__elements__item-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: #0067b8;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.5;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main__page__element__group_link_1:hover,
+.main__elements__item-link:hover {
+  text-decoration: underline;
+}

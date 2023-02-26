@@ -1,0 +1,151 @@
+body {
+  background-color: #fafafa;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+:root {
+  --base-unit: 4px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /*указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк*/
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 85%;
+  margin-top: 30px;
+}
+.main__left {
+  height: 700px;
+  width: 430px;
+  background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+  background-repeat: no-repeat;
+  transform: scale(1.1);
+  margin-right: 40px;
+  margin-top: 50px;
+}
+.main__left__phone {
+  position: relative;
+  top: 28px;
+  left: 155px;
+  width: 250px;
+  height: 539px;
+}
+.main__right {
+  margin-top: -35px;
+}
+.main__right__form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  margin: 25px;
+  padding: 25px;
+  width: 350px;
+  height: 398px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+}
+.main__right__form_logo {
+  padding: 20px 60px;
+  display: inline-block;
+  cursor: pointer;
+  /* margin-top: calc(var(--base-unit) * 9);
+  margin-bottom: calc(var(--base-unit) * 3); */
+}
+#main__right__form_login,
+#main__right__form_password {
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  margin: calc(var(--base-unit) * 2) 0;
+}
+#main__right__form_login:active,
+#main__right__form_login:focus,
+#main__right__form_password:active,
+#main__right__form_password:focus {
+  border: 1px solid grey;
+}
+.main__right__form_btn {
+  background-color: #0095f6;
+  opacity: 0.6;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  margin: calc(var(--base-unit) * 2) 0;
+  border-radius: 12px;
+  font-weight: 500;
+}
+.main__right__form_divider {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main__right__form_btn_fcb {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.main__right__form_btn_fcb_logo {
+  height: 16px;
+  width: 16px;
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  transform: scale(1.4);
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+.main__right__form_link {
+  text-align: center;
+  padding: 20px;
+}
+.main__right__bottom {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  background-color: white;
+  margin: 25px;
+  padding: 25px;
+  width: 350px;
+  text-align: center;
+}
+.main__right__apps {
+  margin-top: 20px;
+  text-align: center;
+}
+.footer {
+  height: 15%;
+}
+.footer__top,
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: auto;
+}
+.footer__top_link {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  padding: 8px;
+}

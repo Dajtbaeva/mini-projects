@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload With Promises</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .popup {
+        background: antiquewhite;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        transition: all 0.25s;
+        top: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        --opacity: 0;
+        opacity: var(--opacity);
+      }
+      .popup fieldset {
+        background: var(--grey);
+        padding: 2rem;
+        border: 3px solid var(--pink);
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        transition: all 0.2s;
+        --scale: 0.3;
+        transform: scale(var(--scale));
+      }
+      .popup.open {
+        --opacity: 1;
+        pointer-events: all;
+      }
+      .popup.open fieldset {
+        --scale: 1;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <label for="name">Please enter your name(for apply for a job):</label>
+      <input type="text" name="name" />
+      <button id="btn">Start upload files!</button>
+    </div>
+  </body>
+</html>

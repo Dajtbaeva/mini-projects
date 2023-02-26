@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blurred Background Cam</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #video {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <video id="video" width="1080" height="720" autoplay></video>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
+<!-- https://github.com/tensorflow/tfjs-models/tree/master/body-segmentation -->
+<!-- https://github.com/tensorflow/tfjs-models/blob/master/body-pix/README-v1.md -->
